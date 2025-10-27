@@ -9,9 +9,10 @@ import {
   Building,
   Flag,
   Scale,
+  User,
 } from 'lucide-react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { BrainHeartIcon, PuzzlePiecePersonIcon, TargetIcon } from '@/components/icons';
+import { BrainHeartIcon, PuzzlePiecePersonIcon } from '@/components/icons';
 import { PageHeader } from '@/components/page-header';
 
 const forces = [
@@ -77,8 +78,8 @@ export default function Home() {
       />
 
       <section className="relative my-24 flex h-64 items-center justify-center py-16 md:my-32">
-        <div className="absolute z-10">
-          <TargetIcon className="h-48 w-48 text-muted" />
+        <div className="absolute z-10 rounded-full border-4 border-muted bg-background p-6 shadow-lg">
+          <User className="h-24 w-24 text-foreground" />
         </div>
 
         {forces.map((force, index) => (
