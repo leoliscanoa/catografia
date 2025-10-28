@@ -26,13 +26,13 @@ const forces = [
     name: 'Dimensión Humana y Ética',
     icons: [Heart, Handshake, Users],
     color: 'text-accent',
-    position: 'bottom-0 -left-8',
+    position: 'bottom-0 left-0',
   },
   {
     name: 'Contexto y Factores Externos',
     icons: [Globe, Building, Flag],
     color: 'text-amber-600',
-    position: 'bottom-0 -right-8',
+    position: 'bottom-0 right-0',
   },
 ];
 
@@ -71,7 +71,7 @@ const challenges = [
 
 export default function Home() {
   return (
-    <div className="container mx-auto px-4 py-8 md:py-12 overflow-x-hidden">
+    <div className="container mx-auto max-w-4xl px-4 py-8 md:py-12">
       <PageHeader
         title="El Profesional en la Encrucijada"
         description="La Tensión entre Técnica y Humanidad"
