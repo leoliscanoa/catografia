@@ -5,11 +5,7 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import {
   Cog,
-  FileScan,
-  HeartHandshake,
   Home,
-  ListTodo,
-  Sparkles,
 } from 'lucide-react';
 import {
   Sidebar,
@@ -29,10 +25,6 @@ import { Separator } from '../ui/separator';
 
 const navItems = [
   { href: '/', label: 'Infografía', icon: Home },
-  { href: '/dehumanization-detector', label: 'Detector de Lenguaje', icon: FileScan },
-  { href: '/recommendations', label: 'Recomendaciones Éticas', icon: Sparkles },
-  { href: '/decision-support', label: 'Soporte de Decisión', icon: HeartHandshake },
-  { href: '/responsibility-tracker', label: 'Seguimiento', icon: ListTodo },
 ];
 
 function AppSidebar() {
